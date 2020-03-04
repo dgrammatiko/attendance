@@ -5,12 +5,14 @@
   import Modal from "./Modal.svelte";
 
   let currentUserId;
-  setContext("simple-modal", false);
+
+  const close = () => {
+    currentUserId = null;
+  };
 
   onMount(() => {
     if (Object.entries($user).length === 0 && $user.constructor === Object) {
       if (!firebase.auth().currentUser) {
-        debugger;
         user.set({});
       }
     }
@@ -69,7 +71,7 @@
               <button id={usr.id} on:click={nav}>Edit</button>
             </td>
             {#if currentUserId}
-              <Modal>
+              <Modal on:close={close}>
                 <User id={currentUserId} />
               </Modal>
             {/if}
