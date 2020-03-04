@@ -1,0 +1,9 @@
+.env
+node_modules
+public
+server
+public/base.css
+public/bundle.css
+public/bundle.css.map
+public/bundle.js
+public/bundle.js.map
