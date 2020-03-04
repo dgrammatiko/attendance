@@ -19,7 +19,7 @@
 
 <style>
   label {
-    color: var(--hiq-color-gray-8);
+    color: var(--hiq-color-gray-1);
   }
 </style>
 

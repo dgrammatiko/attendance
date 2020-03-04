@@ -23,7 +23,7 @@
         .then(_ => {
           const currentUserTmp = firebase.auth().currentUser;
           user.set(currentUserTmp);
-          sessionStorage.setItem("dgUser", currentUserTmp);
+          sessionStorage.setItem("dgUser", JSON.stringify(currentUserTmp));
           usersRef
             .get()
             .then(doc => {
@@ -41,7 +41,7 @@
               });
 
               users.set(xx);
-              sessionStorage.setItem("dgUsers", xx);
+              sessionStorage.setItem("dgUsers", JSON.stringify(xx));
             })
             .catch(err => console.log(err));
         })
