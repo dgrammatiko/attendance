@@ -1,6 +1,5 @@
 .env
 node_modules
-server
 public/base.css
 public/bundle.css
 public/bundle.css.map
