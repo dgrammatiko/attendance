@@ -24,7 +24,7 @@
     }
   });
 
-  // Get the finger print from the device
+  // Get an image from the device
   const toDataURL = url =>
     fetch(url)
       .then(response => response.blob())
