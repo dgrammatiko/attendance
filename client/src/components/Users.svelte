@@ -70,13 +70,13 @@
             <td data-column="Edit">
               <button id={usr.id} on:click={nav}>Edit</button>
             </td>
-            {#if currentUserId}
-              <Modal on:close={close}>
-                <User id={currentUserId} />
-              </Modal>
-            {/if}
           </tr>
         {/each}
+      {/if}
+      {#if currentUserId}
+        <Modal on:close={close}>
+          <User id={currentUserId} />
+        </Modal>
       {/if}
     </tbody>
   </table>
