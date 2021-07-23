@@ -38,7 +38,7 @@
     "rollup-plugin-svelte": "5.2.3",
     "rollup-plugin-terser": "6.1.0",
     "sirv-cli": "1.0.12",
-    "svelte": "3.40.1",
+    "svelte": "3.40.2",
     "sveltejs-forms": "2.1.2",
     "yup": "0.32.9"
   }
