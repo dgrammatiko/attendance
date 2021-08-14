@@ -36,7 +36,7 @@
     "rollup-plugin-livereload": "1.3.0",
     "rollup-plugin-node-resolve": "5.2.0",
     "rollup-plugin-svelte": "5.2.3",
-    "rollup-plugin-terser": "6.1.0",
+    "rollup-plugin-terser": "7.0.2",
     "sirv-cli": "1.0.14",
     "svelte": "3.42.1",
     "sveltejs-forms": "2.1.2",
